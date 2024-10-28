@@ -29,10 +29,12 @@ namespace HelloWorldApp
             string[][] displayTest = testTF.formatFile();
             for (int i = 0; i < displayTest.Length; i++)
             {
+                //for every internal array inside the outter array, turn its contents into a string and print to console.
                 Console.WriteLine(String.Join(" ", displayTest[i]));
             }
-            
-
+            Console.WriteLine("----------------------------------------------------------------------------------------------------------\n");
+            KeyWord_Processor testKWP = new KeyWord_Processor("testKWP",displayTest);
+            testKWP.getFlaggedWords();
             //stops console app from closing immediately after running
             Console.ReadKey();
 
