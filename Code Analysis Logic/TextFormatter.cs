@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 public class TextFormatter
 {
@@ -9,13 +10,50 @@ public class TextFormatter
 		this.inputFile = inputFile;
 		this.id = id;
 
-	
-	}
+
+    }
 
     //private string[] removeExtraSpaces(string[] target)
     //{
     //	for
     //}
+
+    //♡ £ ¢
+    private string signAllWhiteSpacesInString(string input)// will find whitespaces and replace with an important symbol 
+    {
+        if (string.IsNullOrWhiteSpace(input))
+        {
+            return string.Empty;
+        }
+        char[] charArray = input.ToCharArray();
+        string output = string.Empty;
+
+        for (int i = 0; i < charArray.Length; i++)
+        {
+            if (!char.IsWhiteSpace(charArray[i]))
+            {
+                output += charArray[i];
+            }
+            else if (i > 0 && !char.IsWhiteSpace(charArray[i - 1]))
+            {
+                //key = '\u263a'.ToString();
+                output += "¢";//FIND SYMBOL THAT WORKS
+            }
+        }
+
+        return output.Trim(); // Trim to remove leading/trailing spaces
+    }
+    private string[] signAllWhiteSpacesInFile(string[] target)
+    {
+        string[] spacelessFile = target;
+
+        for (int i = 0; i < target.Length; i++)
+        {
+            spacelessFile[i] = signAllWhiteSpacesInString(target[i]);
+        }
+
+        return spacelessFile;
+    }
     private string removeExtraSpacesInString(string input)
     {
         if (string.IsNullOrWhiteSpace(input)){ 
@@ -28,7 +66,7 @@ public class TextFormatter
             if (!char.IsWhiteSpace(charArray[i])){
                 output += charArray[i];
             } else if (i > 0 && !char.IsWhiteSpace(charArray[i - 1])){
-                output += ' ';
+                //output += ' ';
             }
         }
 
@@ -56,13 +94,13 @@ public class TextFormatter
         }
         return temp;
     }
-    public string[][] formatFile()
+    public string formatFile()
 	{
         string[] modFile = this.inputFile;
-        modFile = removeExtraSpacesInFile(modFile);
+        modFile = signAllWhiteSpacesInFile(modFile);
 
 
-        string[][] returnFile = cutFile(modFile);
+        string returnFile = string.Join("£", modFile); //cutFile(modFile);
 		return returnFile;
 	}
 

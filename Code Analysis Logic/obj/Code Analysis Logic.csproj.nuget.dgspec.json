@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JD\\source\\repos\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\Code Analysis Logic.csproj": {}
+    "C:\\Users\\JD\\Documents\\GitHub\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\Code Analysis Logic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JD\\source\\repos\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\Code Analysis Logic.csproj": {
+    "C:\\Users\\JD\\Documents\\GitHub\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\Code Analysis Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JD\\source\\repos\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\Code Analysis Logic.csproj",
+        "projectUniqueName": "C:\\Users\\JD\\Documents\\GitHub\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\Code Analysis Logic.csproj",
         "projectName": "Code Analysis Logic",
-        "projectPath": "C:\\Users\\JD\\source\\repos\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\Code Analysis Logic.csproj",
+        "projectPath": "C:\\Users\\JD\\Documents\\GitHub\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\Code Analysis Logic.csproj",
         "packagesPath": "C:\\Users\\JD\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JD\\source\\repos\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\obj\\",
+        "outputPath": "C:\\Users\\JD\\Documents\\GitHub\\SE300-Code-Analysis-Tool\\Code Analysis Logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

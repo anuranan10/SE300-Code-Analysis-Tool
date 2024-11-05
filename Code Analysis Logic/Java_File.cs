@@ -1,12 +1,54 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Java_File
 {
+	//relevant information for the file itself
+	string filePath;
+	string[] fileStringArray;
+
+
+	//what attributes does a java file have that the program or user would want to know?
 	string id;
+	int linesTotal;
+	int linesExecutable;
+
+	int deepestCodeDepth;
+
+	int amountOfAttributes;
+	int amountOfMethods;
+    int amountOfStaticAttributes;
+    int amountOfStaticMethods;
 
 
-	public Java_File()
+    int amountOfForLoops;
+	int amountOfWhileLoops;
+	int amountOfIfstatements;
+
+	string[] idsOfAssociated;
+
+	Dictionary<string, int> keywordCounter; // assign loggedkws from text formatter to this;
+
+
+    public Java_File(string id, string filePath)
 	{
+		this.id = id;
+		this.filePath = filePath;
+        this.fileStringArray = File.ReadAllLines(filePath);
+    }
 
+	public void printFile()
+	{
+        
+		for(int i = 0; i < fileStringArray.Length; i++)
+		{
+			Console.WriteLine(fileStringArray[i]);
+		}
+    }
+
+	public string[] toArray() //WILL NOT RETURN VOID LATER
+	{
+		return fileStringArray;
 	}
 }

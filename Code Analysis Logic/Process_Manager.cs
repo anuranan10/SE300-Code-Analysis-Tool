@@ -8,6 +8,9 @@ public class Process_Manager
 
 	int stage = 0;
 	string status = "";
+    
+
+
     Java_File[] allInputFiles;
 
 	public Process_Manager(Java_File[] allInputFiles)

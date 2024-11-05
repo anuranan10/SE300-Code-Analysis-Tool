@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Code Analysis Logic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a57aa909408076a4abed004232def50bf7618b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c64e4367735395c55b8dcd80cc93438621483fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Code Analysis Logic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Code Analysis Logic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
