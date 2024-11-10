@@ -15,5 +15,4 @@ C:\Users\anura\OneDrive\Desktop\SE 300\CodeAnalysisTool\CodeAnalysisTool\obj\Deb
 C:\Users\anura\OneDrive\Desktop\SE 300\CodeAnalysisTool\CodeAnalysisTool\obj\Debug\CodeAnalysisTool.exe
 C:\Users\anura\OneDrive\Desktop\SE 300\CodeAnalysisTool\CodeAnalysisTool\obj\Debug\CodeAnalysisTool.pdb
 C:\Users\anura\OneDrive\Desktop\SE 300\CodeAnalysisTool\CodeAnalysisTool\obj\Debug\ResultsScreen\ResultsScreen.g.cs
-C:\Users\anura\OneDrive\Desktop\SE 300\CodeAnalysisTool\CodeAnalysisTool\obj\Debug\CodeAnalysisTool_MarkupCompile.lref
 C:\Users\anura\OneDrive\Desktop\SE 300\CodeAnalysisTool\CodeAnalysisTool\obj\Debug\ResultsScreen\ResultsScreen.baml
