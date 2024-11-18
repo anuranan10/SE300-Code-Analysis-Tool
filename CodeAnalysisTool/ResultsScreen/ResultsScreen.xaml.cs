@@ -9,5 +9,15 @@ namespace CodeAnalysisTool.ResultsScreen
         {
             InitializeComponent();
         }
+
+        private void ReturnToDashboard_Click(object sender, RoutedEventArgs e)
+        {
+            //back to the dashboard
+            CodeAnalysisTool.Dashboard.Dashboard dashboard = new CodeAnalysisTool.Dashboard.Dashboard();
+            dashboard.Show();
+
+            //closing current screen
+            this.Close();
+        }
     }
 }
