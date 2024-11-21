@@ -2,12 +2,12 @@
 
 
 //Later we can get more advanced by using this as a abstract class for each datatype and attribute type and each type has unique interactions
-public class Attrib
+public class Mthd
 {
 	public string type;
 	public string name;
 	public string modf;
-	public Attrib(string modf, string type, string name) 
+	public Mthd(string modf, string type, string name) 
 
 	{
 		this.type = type;

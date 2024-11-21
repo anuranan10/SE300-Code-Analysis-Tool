@@ -57,7 +57,7 @@ public class Lab05_ConstantRacer_Kelley {
 		String racerString = "Name: " + name;
 		racerString += "\nDistance: " + distance;
 		return racerString;
-	}
+	}5
 	public String getName() {
 		return name;
 	}

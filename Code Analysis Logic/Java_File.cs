@@ -6,11 +6,11 @@ public class Java_File
 {
 	//relevant information for the file itself
 	string filePath;
-	string[] fileStringArray;
+	public string[] fileStringArray;
 
 
 	//what attributes does a java file have that the program or user would want to know?
-	string id;
+	public string id;
 	int linesTotal;
 	int linesExecutable;
 
@@ -29,7 +29,8 @@ public class Java_File
 	string[] idsOfAssociated;
 
 	Dictionary<string, int> keywordCounter; // assign loggedkws from text formatter to this;
-
+	List<Mthd> mthds = new List<Mthd>();
+	List<Attrib> attribs = new List<Attrib>();
 
     public Java_File(string id, string filePath)
 	{

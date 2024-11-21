@@ -26,6 +26,8 @@ namespace HelloWorldApp
             testFile.printFile();
 
             //funny thing i learned, if i dont clone here, it will modify the reference and therefore change testFile.filestringarray
+
+            /*
             TextFormatter testTF = new TextFormatter("testTF", (string[])testFile.toArray().Clone());
             string displayTest = testTF.formatFile();
 
@@ -49,9 +51,17 @@ namespace HelloWorldApp
 
             Console.WriteLine("----------------------------------------------------------------------------------------------------------\n");
             Console.WriteLine(Globals.userMadeClasses[0]);
+            */
+
+            Process_Manager testPM = new Process_Manager(testFile);
+            testPM.printFinalData();
+
 
             //stops console app from closing immediately after running
             Console.ReadKey();
+
+            
+
 
         }
     }

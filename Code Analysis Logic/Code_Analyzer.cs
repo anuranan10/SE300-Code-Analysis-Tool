@@ -59,7 +59,7 @@ public class Code_Analyzer
                 //if(termInArray(currentTerm, (string[])Globals.userMadeClasses.ToArray())){
 
                 //}
-
+				
                 switch (currentTerm.ToLower())
                     {
                         case "import":
@@ -69,25 +69,46 @@ public class Code_Analyzer
 							Globals.userMadeClasses.Add(nextTerm);
 							break;
 						case "int":
-						if	(curlyBracketLevel == 1)
-						{
-                            codeAttribs.Add(new Attrib("int", nextTerm));
-                        }
-							
+							if (curlyBracketLevel == 1 && nextTerm != "[" && parenthesisLevel == 0)//inArguments == false)
+							{
+								if (nextNextTerm != "(")
+								{
+									codeAttribs.Add(new Attrib(getModf(lastTerm), "int", nextTerm));
+								}
+								else
+								{
+									// codeMthds.Add(new Mthd("int", nextTerm));
+								}
+
+							}
+							break;
+						case "double":
+							if (curlyBracketLevel == 1 && nextTerm != "[" && parenthesisLevel == 0)//inArguments == false)
+							{
+								if (nextNextTerm != "(")
+								{
+									codeAttribs.Add(new Attrib(getModf(lastTerm), "double", nextTerm));
+								}
+								else
+								{
+									// codeMthds.Add(new Mthd("double", nextTerm));
+								}
+
+							}
 							break;
 						case "string":
-						if (curlyBracketLevel == 1 && nextTerm != "[" && parenthesisLevel == 0)//inArguments == false)
-                        {
-							if(nextNextTerm != "(")
+							if (curlyBracketLevel == 1 && nextTerm != "[" && parenthesisLevel == 0)//inArguments == false)
 							{
-                                codeAttribs.Add(new Attrib("string", nextTerm));
-							}
-							else
-							{
-								// codeMthds.Add(new Mthd("string", nextTerm));
-							}
+								if(nextNextTerm != "(")
+								{
+									codeAttribs.Add(new Attrib(getModf(lastTerm), "string", nextTerm));
+								}
+								else
+								{
+									// codeMthds.Add(new Mthd("string", nextTerm));
+								}
 								
-						}
+							}
 						
 
 							break;
@@ -133,7 +154,14 @@ public class Code_Analyzer
 
 
 
+	private string getModf(string last)
+	{
+		if (last == "")
+		{
 
+		}
+		return last;
+	}
 
     private bool termInArray(string term, string[] target)
     {
