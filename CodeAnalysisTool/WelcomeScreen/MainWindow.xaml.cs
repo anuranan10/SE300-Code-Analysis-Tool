@@ -1,11 +1,12 @@
 ﻿using System.Windows;
 using CodeAnalysisTool.Dashboard;
+using CodeAnalysisToolLogic.Models;
 
 namespace CodeAnalysisTool.WelcomeScreen
 {
     public partial class MainWindow : Window
     {
-        public MainWindow()
+            public MainWindow()
         {
             InitializeComponent();
         }

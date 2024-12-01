@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAnalysisTool", "CodeAnalysisTool\CodeAnalysisTool.csproj", "{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAnalysisToolLogic", "CodeAnalysisToolLogic\CodeAnalysisToolLogic.csproj", "{5C541D85-8E20-41F1-98E1-178ED5207408}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C541D85-8E20-41F1-98E1-178ED5207408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C541D85-8E20-41F1-98E1-178ED5207408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C541D85-8E20-41F1-98E1-178ED5207408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C541D85-8E20-41F1-98E1-178ED5207408}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

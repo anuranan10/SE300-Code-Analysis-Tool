@@ -107,6 +107,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CodeAnalysisToolLogic\CodeAnalysisToolLogic.csproj">
+      <Project>{5c541d85-8e20-41f1-98e1-178ed5207408}</Project>
+      <Name>CodeAnalysisToolLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

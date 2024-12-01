@@ -1,19 +1,53 @@
 ﻿<Window x:Class="CodeAnalysisTool.ResultsScreen.ResultsScreen"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="CAT" Height="550" Width="700" WindowStartupLocation="CenterScreen">
+        Title="CAT - Results" Height="600" Width="800" WindowStartupLocation="CenterScreen">
 
     <Grid Background="#f9f9f9">
         <!-- Title -->
         <TextBlock Text="Code Analytics" HorizontalAlignment="Center" VerticalAlignment="Top"
-                   FontSize="26" FontWeight="Bold" Margin="0,40,0,0" />
+                   FontSize="28" FontWeight="Bold" Margin="0,20,0,0" />
 
-        <!-- Return Button -->  
-        <Button Content="Return to Dashboard" Width="210" Height="45" 
-        HorizontalAlignment="Center" VerticalAlignment="Top" 
-        Margin="0,450,0,0" Background="Green" Foreground="Black" 
-        FontSize="20" FontWeight="DemiBold"
-        Click="ReturnToDashboard_Click" />
-            
+        <!-- File Path -->
+        <TextBlock Text="Analyzed File:" FontSize="16" FontWeight="DemiBold" Margin="20,70,0,0"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" />
+        <TextBlock x:Name="FilePathTextBlock" FontSize="16" Margin="150,70,0,0"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Gray" />
+
+        <!-- Summary -->
+        <Border Background="Green" CornerRadius="10" Margin="20,120,442,50">
+            <StackPanel Margin="10">
+                <TextBlock Text="Summary" FontSize="25" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10" />
+                <TextBlock x:Name="ClassCountText" Text="Number of Classes: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="InterfaceCountText" Text="Number of Interfaces: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="InheritancePresentText" Text="Inheritance Present: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="TotalLOCText" Text="Total LOC: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="TotalELOCText" Text="Total ELOC: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="AverageCouplingText" Text="Average Coupling: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="AverageCohesionText" Text="Average Cohesion: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="MaxNestingDepthText" Text="Maximum Nesting Depth: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+            </StackPanel>
+        </Border>
+
+        <!-- Class Details Section -->
+        <Border Background="Green" CornerRadius="10" Margin="400,120,20,50">
+            <StackPanel Margin="10">
+                <TextBlock Text="Class Details" FontSize="25" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10" />
+                <TextBlock x:Name="ClassNameText" Text="Class Name: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="ParentClassText" Text="Parent Class: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="AttributesCountText" Text="Number of Attributes: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="MethodsCountText" Text="Number of Methods: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="InnerClassText" Text="Inner Class Defined: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="ELOCPerMethodText" Text="Average ELOC per Method: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="MaxELOCText" Text="Maximum ELOC in Method: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+                <TextBlock x:Name="ExceededMALOCText" Text="Methods Exceeding MALOC: " FontSize="16" Foreground="White" Margin="0,10,0,0" />
+            </StackPanel>
+        </Border>
+
+        <!-- Return Button -->
+        <Button Content="Return to Dashboard" Width="200" Height="40" 
+                HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                Margin="0,20,0,2" Background="Green" Foreground="Black" 
+                FontSize="16" Click="ReturnToDashboard_Click" />
     </Grid>
 </Window>

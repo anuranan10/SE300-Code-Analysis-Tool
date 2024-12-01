@@ -2,6 +2,8 @@
 using CodeAnalysisTool.WelcomeScreen;
 using CodeAnalysisTool.ResultsScreen;
 using Microsoft.Win32;
+using CodeAnalysisToolLogic.Models;
+using System.Collections.Generic;
 
 namespace CodeAnalysisTool.Dashboard
 {
@@ -44,12 +46,30 @@ namespace CodeAnalysisTool.Dashboard
         {
             if (selectedFilePath != null)
             {
-                //navigate to the results screen
-                CodeAnalysisTool.ResultsScreen.ResultsScreen resultsScreen = new CodeAnalysisTool.ResultsScreen.ResultsScreen();
+                // Use CodeAnalyzer with the uploaded file
+                CodeAnalyzer analyzer = new CodeAnalyzer(selectedFilePath);
+
+                // Get analytics result (update this as per the format you want to display)
+                string[] analysisReport = analyzer.getAnalytics();
+
+                // Convert the string[] to List<string>
+                List<string> reportDetails = new List<string>(analysisReport);
+
+                // Pass the analysis result to the ResultsScreen
+                AnalysisResult analysisResult = new AnalysisResult
+                {
+                    ReportDetails = reportDetails // Assign the List<string> instead of string[]
+                };
+
+                CodeAnalysisTool.ResultsScreen.ResultsScreen resultsScreen = new CodeAnalysisTool.ResultsScreen.ResultsScreen(analysisResult);
                 resultsScreen.Show();
-                this.Close(); //close the dashboard
+                this.Close();
             }
         }
+
+
+
+
 
     }
 }
