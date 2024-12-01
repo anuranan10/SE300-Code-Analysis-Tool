@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5C541D85-8E20-41F1-98E1-178ED5207408}|CodeAnalysisToolLogic\\CodeAnalysisToolLogic.csproj|c:\\users\\anura\\onedrive\\desktop\\se 300\\ui\\ui\\codeanalysistool\\codeanalysistoollogic\\java_file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C541D85-8E20-41F1-98E1-178ED5207408}|CodeAnalysisToolLogic\\CodeAnalysisToolLogic.csproj|solutionrelative:codeanalysistoollogic\\java_file.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C541D85-8E20-41F1-98E1-178ED5207408}|CodeAnalysisToolLogic\\CodeAnalysisToolLogic.csproj|c:\\users\\anura\\onedrive\\desktop\\se 300\\ui\\ui\\codeanalysistool\\codeanalysistoollogic\\process_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C541D85-8E20-41F1-98E1-178ED5207408}|CodeAnalysisToolLogic\\CodeAnalysisToolLogic.csproj|solutionrelative:codeanalysistoollogic\\process_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C541D85-8E20-41F1-98E1-178ED5207408}|CodeAnalysisToolLogic\\CodeAnalysisToolLogic.csproj|c:\\users\\anura\\onedrive\\desktop\\se 300\\ui\\ui\\codeanalysistool\\codeanalysistoollogic\\code_analyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C541D85-8E20-41F1-98E1-178ED5207408}|CodeAnalysisToolLogic\\CodeAnalysisToolLogic.csproj|solutionrelative:codeanalysistoollogic\\code_analyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C541D85-8E20-41F1-98E1-178ED5207408}|CodeAnalysisToolLogic\\CodeAnalysisToolLogic.csproj|c:\\users\\anura\\onedrive\\desktop\\se 300\\ui\\ui\\codeanalysistool\\codeanalysistoollogic\\models\\analysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C541D85-8E20-41F1-98E1-178ED5207408}|CodeAnalysisToolLogic\\CodeAnalysisToolLogic.csproj|solutionrelative:codeanalysistoollogic\\models\\analysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}|CodeAnalysisTool\\CodeAnalysisTool.csproj|c:\\users\\anura\\onedrive\\desktop\\se 300\\ui\\ui\\codeanalysistool\\codeanalysistool\\resultsscreen\\resultsscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}|CodeAnalysisTool\\CodeAnalysisTool.csproj|solutionrelative:codeanalysistool\\resultsscreen\\resultsscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}|CodeAnalysisTool\\CodeAnalysisTool.csproj|c:\\users\\anura\\onedrive\\desktop\\se 300\\ui\\ui\\codeanalysistool\\codeanalysistool\\resultsscreen\\resultsscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}|CodeAnalysisTool\\CodeAnalysisTool.csproj|solutionrelative:codeanalysistool\\resultsscreen\\resultsscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}|CodeAnalysisTool\\CodeAnalysisTool.csproj|c:\\users\\anura\\onedrive\\desktop\\se 300\\ui\\ui\\codeanalysistool\\codeanalysistool\\dashboard\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}|CodeAnalysisTool\\CodeAnalysisTool.csproj|solutionrelative:codeanalysistool\\dashboard\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}|CodeAnalysisTool\\CodeAnalysisTool.csproj|c:\\users\\anura\\onedrive\\desktop\\se 300\\ui\\ui\\codeanalysistool\\codeanalysistool\\dashboard\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEE3BF49-BA7A-48BD-8268-BD65C36F0CF9}|CodeAnalysisTool\\CodeAnalysisTool.csproj|solutionrelative:codeanalysistool\\dashboard\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,108 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Process_Manager.cs",
-              "DocumentMoniker": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisToolLogic\\Process_Manager.cs",
-              "RelativeDocumentMoniker": "CodeAnalysisToolLogic\\Process_Manager.cs",
-              "ToolTip": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisToolLogic\\Process_Manager.cs",
-              "RelativeToolTip": "CodeAnalysisToolLogic\\Process_Manager.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAkwEUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T05:30:55.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Java_File.cs",
-              "DocumentMoniker": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisToolLogic\\Java_File.cs",
-              "RelativeDocumentMoniker": "CodeAnalysisToolLogic\\Java_File.cs",
-              "ToolTip": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisToolLogic\\Java_File.cs",
-              "RelativeToolTip": "CodeAnalysisToolLogic\\Java_File.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwB8AAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T05:30:41.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Code_Analyzer.cs",
-              "DocumentMoniker": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisToolLogic\\Code_Analyzer.cs",
-              "RelativeDocumentMoniker": "CodeAnalysisToolLogic\\Code_Analyzer.cs",
-              "ToolTip": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisToolLogic\\Code_Analyzer.cs",
-              "RelativeToolTip": "CodeAnalysisToolLogic\\Code_Analyzer.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAuwLwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T05:27:35.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AnalysisResult.cs",
-              "DocumentMoniker": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisToolLogic\\Models\\AnalysisResult.cs",
-              "RelativeDocumentMoniker": "CodeAnalysisToolLogic\\Models\\AnalysisResult.cs",
-              "ToolTip": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisToolLogic\\Models\\AnalysisResult.cs",
-              "RelativeToolTip": "CodeAnalysisToolLogic\\Models\\AnalysisResult.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwCMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T05:30:04.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisTool\\Dashboard\\Dashboard.xaml.cs",
-              "RelativeDocumentMoniker": "CodeAnalysisTool\\Dashboard\\Dashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisTool\\Dashboard\\Dashboard.xaml.cs",
-              "RelativeToolTip": "CodeAnalysisTool\\Dashboard\\Dashboard.xaml.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAwEoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T05:26:46.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dashboard.xaml",
-              "DocumentMoniker": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisTool\\Dashboard\\Dashboard.xaml",
-              "RelativeDocumentMoniker": "CodeAnalysisTool\\Dashboard\\Dashboard.xaml",
-              "ToolTip": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisTool\\Dashboard\\Dashboard.xaml",
-              "RelativeToolTip": "CodeAnalysisTool\\Dashboard\\Dashboard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-01T05:26:45.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ResultsScreen.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisTool\\ResultsScreen\\ResultsScreen.xaml.cs",
-              "RelativeDocumentMoniker": "CodeAnalysisTool\\ResultsScreen\\ResultsScreen.xaml.cs",
-              "ToolTip": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisTool\\ResultsScreen\\ResultsScreen.xaml.cs",
-              "RelativeToolTip": "CodeAnalysisTool\\ResultsScreen\\ResultsScreen.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T05:26:41.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ResultsScreen.xaml",
-              "DocumentMoniker": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisTool\\ResultsScreen\\ResultsScreen.xaml",
-              "RelativeDocumentMoniker": "CodeAnalysisTool\\ResultsScreen\\ResultsScreen.xaml",
-              "ToolTip": "C:\\Users\\anura\\OneDrive\\Desktop\\SE 300\\ui\\UI\\CodeAnalysisTool\\CodeAnalysisTool\\ResultsScreen\\ResultsScreen.xaml",
-              "RelativeToolTip": "CodeAnalysisTool\\ResultsScreen\\ResultsScreen.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-01T04:56:30.192Z",
-              "EditorCaption": ""
             }
           ]
         }

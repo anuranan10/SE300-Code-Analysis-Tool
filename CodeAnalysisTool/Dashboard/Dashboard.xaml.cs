@@ -4,6 +4,7 @@ using CodeAnalysisTool.ResultsScreen;
 using Microsoft.Win32;
 using CodeAnalysisToolLogic.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CodeAnalysisTool.Dashboard
 {
@@ -41,31 +42,54 @@ namespace CodeAnalysisTool.Dashboard
                 AnalyzeButton.IsEnabled = true; //enabling the analyze button
             }
         }
-
         private void AnalyzeButton_Click(object sender, RoutedEventArgs e)
         {
             if (selectedFilePath != null)
             {
-                // Use CodeAnalyzer with the uploaded file
-                CodeAnalyzer analyzer = new CodeAnalyzer(selectedFilePath);
+                // Step 1: Analyze the file
+                Java_File javaFile = new Java_File("File1", selectedFilePath);
+                Process_Manager processManager = new Process_Manager(javaFile);
+                processManager.printFinalData();
 
-                // Get analytics result (update this as per the format you want to display)
-                string[] analysisReport = analyzer.getAnalytics();
-
-                // Convert the string[] to List<string>
-                List<string> reportDetails = new List<string>(analysisReport);
-
-                // Pass the analysis result to the ResultsScreen
+                // Step 2: Build AnalysisResult
                 AnalysisResult analysisResult = new AnalysisResult
                 {
-                    ReportDetails = reportDetails // Assign the List<string> instead of string[]
+                    ReportDetails = new List<string> { selectedFilePath }, // Pass the file path
+                    TotalLOC = javaFile.toArray().Length,
+                    TotalELOC = CalculateELOC(javaFile.toArray()),
+                    ClassCount = Globals.userMadeClasses.Count,
+                    InterfaceCount = 0, // Update based on analysis
+                    HasInheritance = CheckInheritance(javaFile.toArray()),
+                    AverageCoupling = 0, // Update based on analysis
+                    AverageCohesion = 0, // Update based on analysis
+                    MaxNestingDepth = 0, // Update based on analysis
+                    ClassDetails = GenerateClassDetails(javaFile)
                 };
 
+                // Step 3: Open ResultsScreen and pass AnalysisResult
                 CodeAnalysisTool.ResultsScreen.ResultsScreen resultsScreen = new CodeAnalysisTool.ResultsScreen.ResultsScreen(analysisResult);
                 resultsScreen.Show();
                 this.Close();
             }
         }
+
+        // Example helper functions
+        private int CalculateELOC(string[] lines)
+        {
+            return lines.Count(line => !string.IsNullOrWhiteSpace(line) && !line.Trim().StartsWith("//"));
+        }
+
+        private bool CheckInheritance(string[] lines)
+        {
+            return lines.Any(line => line.Contains("extends"));
+        }
+
+        private List<ClassDetails> GenerateClassDetails(Java_File javaFile)
+        {
+            // Use logic from CodeAnalyzer and other components to populate ClassDetails
+            return new List<ClassDetails>(); // Replace with actual logic
+        }
+
 
 
 
