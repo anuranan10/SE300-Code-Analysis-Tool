@@ -29,7 +29,7 @@
             </StackPanel>
         </Border>
 
-        <!-- Class Details Section -->
+        <!-- Class Details -->
         <Border Background="Green" CornerRadius="10" Margin="400,120,20,50">
             <StackPanel Margin="10">
                 <TextBlock Text="Class Details" FontSize="25" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10" />

@@ -17,10 +17,10 @@ namespace CodeAnalysisTool.ResultsScreen
 
         private void DisplayResults(AnalysisResult result)
         {
-            // Display file path (remove redundant "Analyzed File:")
-            FilePathTextBlock.Text = result.ReportDetails.FirstOrDefault(); // Only display the file path
+            //display file path
+            FilePathTextBlock.Text = result.ReportDetails.FirstOrDefault();
 
-            // General summary
+            //summary
             TotalLOCText.Text = $"Total LOC: {result.TotalLOC}";
             TotalELOCText.Text = $"Total ELOC: {result.TotalELOC}";
             ClassCountText.Text = $"Number of Classes: {result.ClassCount}";
@@ -30,7 +30,7 @@ namespace CodeAnalysisTool.ResultsScreen
             AverageCohesionText.Text = $"Average Cohesion: {result.AverageCohesion}";
             MaxNestingDepthText.Text = $"Maximum Nesting Depth: {result.MaxNestingDepth}";
 
-            // Class-specific details
+            //class details
             if (result.ClassDetails != null && result.ClassDetails.Count > 0)
             {
                 var firstClass = result.ClassDetails.First();

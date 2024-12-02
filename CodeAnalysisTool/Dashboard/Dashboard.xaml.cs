@@ -46,34 +46,33 @@ namespace CodeAnalysisTool.Dashboard
         {
             if (selectedFilePath != null)
             {
-                // Step 1: Analyze the file
+                //analyze the file
                 Java_File javaFile = new Java_File("File1", selectedFilePath);
                 Process_Manager processManager = new Process_Manager(javaFile);
                 processManager.printFinalData();
 
-                // Step 2: Build AnalysisResult
+                //build analysis result
                 AnalysisResult analysisResult = new AnalysisResult
                 {
-                    ReportDetails = new List<string> { selectedFilePath }, // Pass the file path
+                    ReportDetails = new List<string> { selectedFilePath },
                     TotalLOC = javaFile.toArray().Length,
                     TotalELOC = CalculateELOC(javaFile.toArray()),
                     ClassCount = Globals.userMadeClasses.Count,
-                    InterfaceCount = 0, // Update based on analysis
+                    InterfaceCount = 0,
                     HasInheritance = CheckInheritance(javaFile.toArray()),
-                    AverageCoupling = 0, // Update based on analysis
-                    AverageCohesion = 0, // Update based on analysis
-                    MaxNestingDepth = 0, // Update based on analysis
+                    AverageCoupling = 0,
+                    AverageCohesion = 0,
+                    MaxNestingDepth = 0,
                     ClassDetails = GenerateClassDetails(javaFile)
                 };
 
-                // Step 3: Open ResultsScreen and pass AnalysisResult
+                //open results screen and pass result
                 CodeAnalysisTool.ResultsScreen.ResultsScreen resultsScreen = new CodeAnalysisTool.ResultsScreen.ResultsScreen(analysisResult);
                 resultsScreen.Show();
                 this.Close();
             }
         }
 
-        // Example helper functions
         private int CalculateELOC(string[] lines)
         {
             return lines.Count(line => !string.IsNullOrWhiteSpace(line) && !line.Trim().StartsWith("//"));
@@ -86,8 +85,7 @@ namespace CodeAnalysisTool.Dashboard
 
         private List<ClassDetails> GenerateClassDetails(Java_File javaFile)
         {
-            // Use logic from CodeAnalyzer and other components to populate ClassDetails
-            return new List<ClassDetails>(); // Replace with actual logic
+            return new List<ClassDetails>();
         }
 
 
